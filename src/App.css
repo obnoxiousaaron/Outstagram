@@ -66,6 +66,7 @@ hr {
 
 /*!| profile page */
 .imgCont {
+  margin-top: 2vh;
   background-color: #1b1b1b;
   display: flex;
   flex-direction: column;
