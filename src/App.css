@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+/*!| html */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+/*!| nav -> refer to "./components/NavBar.css" */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*!| home page */
+.userName {
+  margin-top: 35%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.profileImage {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  filter: sepia(20%)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+}
+
+.image-container-parent {
+  padding-left: 20px;
+}
+
+.image-container {
+  min-height: 60vh;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding-left: 90px;
+  padding-right: 30px;
+}
+
+.userPosts {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  filter: sepia(20%);
+  transition: 1s;
+}
+
+.userPosts:hover{
+ scale: 1.1;
+}
+
+hr {
+  min-width: 60vw;
+  height: 0.3px;
+  background-color: whitesmoke;
+}
+
+/*!| profile page */
+.imgCont {
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.imgCont h1 {
+  color: white;
+}
+
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.userProfile img {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.userPostCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.userPostCont img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding-bottom: 5px;
+  transition: 1s;
+}
+
+.userPostCont img:hover {
+ scale: 1.1;
+}
+
+/*!| Modals -> refer to "./containers/Modal.css" */
+
+/*!| footer */
+footer {
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  height: 4vh;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  align-content: center;
+  background-color: #292929;
+  color: white;
 }

@@ -1,0 +1,11 @@
+.modalParent {
+    position: absolute;
+	display: flex;
+    justify-content: center;
+    z-index: 1;
+    height: 20vh;
+    left: 0;
+}
+
+
+

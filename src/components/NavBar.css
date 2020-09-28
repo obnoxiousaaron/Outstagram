@@ -1,0 +1,192 @@
+.img {
+    height: 45px;
+    width: 60px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+.img:hover, .logoh2:hover{
+  cursor: pointer;
+}
+
+.logolink {
+  color:white;
+  text-decoration: none;
+}
+
+.logolink:hover {
+  color:white;
+  text-decoration: none;
+}
+
+.navbar-div {
+    background-color: #080808 !important;
+    height: 100%;
+}
+
+.navbar-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #080808;
+    height: 10vh;
+}
+
+.logodiv {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    background-color: transparent;
+    height: 5vh;
+    margin: 5px;
+    border-radius: 5%;
+}
+
+h2 {
+    margin: 0 !important;
+    padding: 0;
+} 
+
+.header {
+    display: flex;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+/* input style */
+
+.inputstyle {
+    position: relative;
+    height: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+input {
+    border: none;
+    height: 100%;
+    background-color: #292929;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+span {
+  position: absolute;
+  background-color: #fc2f70;
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+.bottom,
+.top {
+  height: 1px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+
+.left,
+.right {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+input:focus ~ .top, input:focus ~ .bottom {
+  transform: scaleX(1);
+}
+
+input:focus ~ .left, input:focus ~ .right {
+  transform: scaleY(1);
+}
+
+
+/* input end */
+/* button style */
+
+button {
+    border: none;
+    margin: 10px;
+    height: 60%;
+    background-color: #080808;
+    color:white;
+    z-index: 1;
+    position: relative;
+}
+
+button:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+    text-decoration: cyan underline;
+}
+
+@keyframes jelly {
+    0%,
+    100% {
+    transform: scale(1, 1);
+    }
+    25% {
+    transform: scale(0.9, 1.1);
+    }
+    50% {
+    transform: scale(1.1, 0.9);
+    }
+    75% {
+    transform: scale(0.95, 1.05);
+    }
+}
+/* button end */
+
+
+/* Modal Start */
+
+.modalParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;opacity: 80%;
+  color: white;
+  z-index: 1;
+}
+
+.hrLine {
+  height: 0.5px;
+}
+
+
