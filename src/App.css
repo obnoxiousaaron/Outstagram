@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  z-index: 2;
 }
 /*!| nav -> refer to "./components/NavBar.css" */
 
@@ -20,9 +21,11 @@
 }
 
 ul {
+  margin-top: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;  
+  z-index: 999;
 }
 
 .image-container-parent {
@@ -124,6 +127,6 @@ footer {
   bottom: 0;
   align-items: center;
   align-content: center;
-  background-color: #292929;
+  background-color: #080808;
   color: white;
 }

@@ -25,13 +25,17 @@
 }
 
 .navbar-div {
+    z-index: 4;
+    position: fixed;
+    width: 100vw;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     align-content: center;
     background-color: #080808;
-    height: 10vh;
+    height: 8vh;
 }
 
 .logodiv {
@@ -144,7 +148,6 @@ button {
     height: 60%;
     background-color: #080808;
     color:white;
-    z-index: 1;
     position: relative;
 }
 
@@ -182,7 +185,6 @@ button:hover {
   height: 100vh;
   background-color: lightgray;opacity: 80%;
   color: white;
-  z-index: 1;
 }
 
 .hrLine {
