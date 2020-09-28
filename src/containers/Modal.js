@@ -51,22 +51,21 @@ export default ({setLogin}) => {
 		if (isOpen) {
 			return (
 
-			<div className="modalParent"> 
-				<div className="modalChild1">
-					<div className="modalExit">
-					<button onClick={() => close()}>X</button>
+			<div className="modalParent modal"> 
+				<div className="modalChild1 modal">
+					<div className="modalExit modal">
 					</div>
-					<hr className="hrLine"></hr>
+					<hr className="hrLine modal"></hr>
 				</div>
-				<div className="modalChild2">
+				<div className="modalChild2 modal">
 					{renderForm()}
-					<hr className="hrLine"></hr>
+					<hr className="hrLine modal"></hr>
 				</div>
-				<div className="modalChild3">
-					<button className="navBtns" href="#">
+				<div className="modalChild3 modal">
+					<button className="navBtns modal" href="#">
 						Submit
 					</button>
-					<button className="navBtns" href="#">
+					<button onClick={() => close()}>
 						Cancel
 					</button>
           		</div>
